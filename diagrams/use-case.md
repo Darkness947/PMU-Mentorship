@@ -1,3 +1,8 @@
+# 🎯 PMU-Mentorship System Use Case Diagram
+
+This Use Case Diagram depicts the system boundary and roles of actors (**Mentee**, **Mentor**, and **Admin**) interacting with the various modules of the PMU-Mentorship application.
+
+```mermaid
 flowchart LR
     %% Actors
     Mentee("👤 Mentee")
@@ -44,4 +49,14 @@ flowchart LR
     classDef usecase fill:#ffffff,stroke:#000000,stroke-width:2px;
     class Mentee,Mentor,Admin actor;
     class UC_Search,UC_Book,UC_Download,UC_Messages,UC_Availability,UC_Share,UC_Requests,UC_ManageUsers,UC_ViewReports usecase;
-    
+```
+
+---
+### Actors & Operational Scopes
+
+1. **Mentee (Student)**:
+   - Primary operations: Searching for active peer mentors by major, booking time slots, reviewing academic files/study guides, and exchanging messages.
+2. **Mentor (Senior/Tutor)**:
+   - Primary operations: Creating session slots, approving or declining incoming booking requests, uploading study files, and chatting with mentees.
+3. **Admin (University Staff)**:
+   - Primary operations: Overall system administration, user management (suspending/registering), and generating/viewing metrics and reports.
