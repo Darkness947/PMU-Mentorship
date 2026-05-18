@@ -26,7 +26,7 @@ flowchart TD
     end
 
     %% Connections across layers
-    UI <-->|HTTP Request (JSON) / Response| WS
+    UI <-->|"HTTP Request (JSON) / Response"| WS
     Logic -- SQL Query --> DB
     Logic -- Upload / Download --> FS
 
